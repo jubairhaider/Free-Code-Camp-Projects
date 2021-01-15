@@ -14,12 +14,26 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5rem;
+  padding: 0.5rem;
   background-color: transparent;
   opacity: 1;
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 2;
+}
+
+.header-active {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  height: 3.5rem;
+  background-color: white;
+  opacity: 1;
+  color: #333;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 .logo-title {
   display: flex;
@@ -40,7 +54,6 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
-
   padding-right: 1rem;
 }
 
@@ -64,13 +77,181 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
 
 .title-text {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 35%;
 }
 
 #main-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.title-text h4 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.video-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+}
+.video-text {
+  margin: 1.5rem 0;
+}
+.video-text h1 {
+  font-size: 2.5rem;
+}
+
+.video-text p {
+  font-size: 1.2rem;
+}
+
+.video-section iframe {
+  width: 50rem;
+  height: 30rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form label {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#email {
+  display: inline-block;
+  width: 40%;
+  margin: auto;
+  height: 2rem;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#email::placeholder {
+  font-size: 1rem;
+}
+
+#submit {
+  display: inline-block;
+  width: 40%;
+  height: 2rem;
+  margin: 1rem auto;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: darkblue;
+}
+
+.features-section {
+  width: 80%;
+  margin: auto;
+}
+
+.features-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.features-text h3 {
+  font-size: 2rem;
+}
+
+.features-text p {
+  font-size: 1rem;
+}
+
+.features {
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.feature-text {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-text h4 {
+  font-size: 1.25rem;
+}
+
+.feature-text p {
+  font-size: 1rem;
+}
+
+.product-section {
+  width: 80%;
+  margin: auto;
+}
+
+.products-text h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.product {
+  border: 1px solid rgb(66, 130, 248);
+  padding: 2rem 3rem;
+  background-color: rgb(66, 130, 248);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+#footer {
+  background-color: rgb(66, 130, 248);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 1.5rem;
 }
