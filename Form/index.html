@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaques Finance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Welcome to Santoro</h1>
+        <p id="description">
+          We provide each on of your financial needs. Just fill and submit this
+          form and get access to all our services
+        </p>
+      </div>
+
+      <div class="form">
+        <form id="survey-form">
+          <div class="name-container">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Place your name...."
+              required
+            />
+          </div>
+          <div class="email-container">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Place your email here....."
+              required
+            />
+          </div>
+          <div class="age-container">
+            <label for="number" id="number-label">Age</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="10"
+              max="100"
+              placeholder="Write your age....."
+              required
+            />
+          </div>
+          <div class="occ-container">
+            <label for="Occupation" id="occ-label">Occupation:</label>
+            <select name="dropdown" id="dropdown">
+              <option value="1">A Banker</option>
+              <option value="2">A broker</option>
+              <option value="3">A robber</option>
+            </select>
+          </div>
+          <div class="bullet-container">
+            <p class="lead">Would you recommend us to a friend?</p>
+            <label for="yes" class="bullet"
+              ><input
+                type="radio"
+                name="recommendation"
+                class="radio"
+              />Yes</label
+            >
+            <label for="no" class="bullet"
+              ><input
+                type="radio"
+                name="recommendation"
+                class="radio"
+              />No</label
+            >
+          </div>
+          <div class="service-container">
+            <p class="lead">What service would you like?</p>
+            <label for="mutual-funds"
+              ><input
+                type="checkbox"
+                id="mutual-funds"
+                value="mutual-funds"
+                name="service"
+              />
+              Mutual Funds
+            </label>
+            <label for="bonds"
+              ><input type="checkbox" id="bonds" value="bonds" name="service" />
+              Bonds
+            </label>
+            <label for="stocks"
+              ><input
+                type="checkbox"
+                id="stocks"
+                value="stocks"
+                name="service"
+              />
+              Stocks
+            </label>
+            <label for="real-estate"
+              ><input
+                type="checkbox"
+                id="real-estate"
+                value="real-estate"
+                name="service"
+              />
+              Real Estate
+            </label>
+          </div>
+          <div class="comments-container">
+            <p class="lead">Additional Comments</p>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input type="submit" name="submit" value="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
