@@ -21,20 +21,9 @@ body {
   position: fixed;
   width: 100%;
   z-index: 2;
+  transition: top 0.3s;
 }
 
-.header-active {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-  height: 3.5rem;
-  background-color: white;
-  opacity: 1;
-  color: #333;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
 .logo-title {
   display: flex;
   align-items: center;
@@ -161,7 +150,7 @@ body {
   border: 2px solid rgb(66, 130, 248);
   border-radius: 3px;
   font-size: 1rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
@@ -246,7 +235,7 @@ body {
   margin: 0 1rem;
   background-color: rgb(66, 130, 248);
   color: white;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 .product:hover {
